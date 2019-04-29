@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+<title>jQuery</title>
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js">
+</script>
+</head>
+<body>
+<h1>Adding HTML</h1>
+<ul id="theList">
+<li>Here’s 1</li>
+<li>Here’s 2</li>
+</ul>
+<script type="text/javascript">
+$(document).ready(function() {
+$("#theList").append("<li>Here’s 3</li>");
+$("#theList li").each(function() {
+var existingText = $(this).text().substr(7,1);
+$(this).text(“Item " + existingText);
+});
+});
+</script>
+</body>
+</html>

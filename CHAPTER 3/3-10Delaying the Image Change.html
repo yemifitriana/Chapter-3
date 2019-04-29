@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+<head>
+<title>jQuery</title>
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js"></script>
+</head>
+<body>
+<h1>Attributes</h1>
+<img alt="square" id="theImage" src="square.jpg" />
+<script type="text/javascript">
+function changeImage() {
+$("#theImage").attr("src","heart.jpg");
+$("#theImage").attr("alt","heart");
+}
+$(document).ready(function() {
+setTimeout(changeImage,2000);
+});
+</script>
+</body>
+</html>
